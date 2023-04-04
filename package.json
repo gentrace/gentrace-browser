@@ -1,0 +1,30 @@
+{
+  "name": "@gentrace/browser",
+  "version": "0.0.1",
+  "description": "Browser library for the Gentrace API to capture user feedback",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gentrace/gentrace-node.git"
+  },
+  "keywords": [
+    "gentrace",
+    "openapi-client"
+  ],
+  "author": "Gentrace",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "run-s clean compile",
+    "clean": "rm -rf dist",
+    "compile": "tsc --outDir dist -d index.ts"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.5",
+    "typescript": "^3.6.4",
+    "npm-run-all": "^4.1.5"
+  }
+}
