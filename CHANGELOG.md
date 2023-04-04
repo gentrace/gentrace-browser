@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.5](https://github.com/gentrace/gentrace-browser/compare/v0.0.4...v0.0.5) (2023-04-04)
+
+
+### Miscellaneous Chores
+
+* release 0.0.4 ([1804161](https://github.com/gentrace/gentrace-browser/commit/1804161750c2ce1a2429e14e5fb30484e441af99))
+* release 0.0.5 ([39c0345](https://github.com/gentrace/gentrace-browser/commit/39c0345039644ecbddab311fbaaaa9722e5641de))
+
 ## [0.0.4](https://github.com/gentrace/gentrace-browser/compare/v0.0.3...v0.0.4) (2023-04-04)
 
 
