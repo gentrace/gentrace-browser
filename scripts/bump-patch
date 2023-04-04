@@ -3,7 +3,7 @@
 # Script assumes that jq and semver are installed
 
 # The remote action may have already bumped the package version
-git pull origin main
+git pull --rebase origin main
 
 CURRENT_VERSION=$(jq -r .version package.json)
 NEXT_VERSION=$(semver $CURRENT_VERSION -i patch)
