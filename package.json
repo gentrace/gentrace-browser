@@ -1,7 +1,7 @@
 {
   "name": "@gentrace/browser",
   "version": "0.0.2",
-  "description": "Browser library for Gentrace",
+  "description": "Browser library for the Gentrace API",
   "repository": {
     "type": "git",
     "url": "git@github.com:gentrace/gentrace-node.git"
