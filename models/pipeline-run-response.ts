@@ -13,6 +13,18 @@
  */
 
 
-export * from "./api";
-export * from "./configuration";
-export * from "./models";
+
+/**
+ * 
+ * @export
+ * @interface PipelineRunResponse
+ */
+export interface PipelineRunResponse {
+    /**
+     * 
+     * @type {string}
+     * @memberof PipelineRunResponse
+     */
+    'pipelineRunId'?: string;
+}
+
