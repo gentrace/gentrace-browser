@@ -18,7 +18,7 @@
     "build": "run-s clean compile",
     "bump-patch": "./scripts/bump-patch",
     "clean": "rm -rf dist",
-    "compile": "tsc -p tsconfig.json"
+    "compile": "tsc -p tsconfig.json "
   },
   "dependencies": {
     "axios": "^0.27.2"
