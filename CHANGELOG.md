@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/gentrace/gentrace-browser/compare/v0.0.6...v0.0.7) (2023-04-17)
+
+
+### Bug Fixes
+
+* modify README to point to site docs ([#12](https://github.com/gentrace/gentrace-browser/issues/12)) ([2c78cb3](https://github.com/gentrace/gentrace-browser/commit/2c78cb33fb3d0dbe6dc29739b5cddf7ae18c1e3e))
+
 ## [0.0.6](https://github.com/gentrace/gentrace-browser/compare/v0.0.5...v0.0.6) (2023-04-12)
 
 
