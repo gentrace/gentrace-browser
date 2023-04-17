@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.8](https://github.com/gentrace/gentrace-browser/compare/v0.0.7...v0.0.8) (2023-04-17)
+
+
+### Miscellaneous Chores
+
+* release 0.0.8 ([#15](https://github.com/gentrace/gentrace-browser/issues/15)) ([378efae](https://github.com/gentrace/gentrace-browser/commit/378efaeca2425d5e80345b363819af7cabd3a9de))
+
 ## [0.0.7](https://github.com/gentrace/gentrace-browser/compare/v0.0.6...v0.0.7) (2023-04-17)
 
 
