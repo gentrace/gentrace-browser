@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.9](https://github.com/gentrace/gentrace-browser/compare/v0.0.8...v0.0.9) (2023-04-24)
+
+
+### Bug Fixes
+
+* updating OpenAI generated browser logic to "0.4.8" ([#22](https://github.com/gentrace/gentrace-browser/issues/22)) ([cc2d2d3](https://github.com/gentrace/gentrace-browser/commit/cc2d2d342f8aa7e2c39569a7bf770787a96b4f70))
+
 ## [0.0.8](https://github.com/gentrace/gentrace-browser/compare/v0.0.7...v0.0.8) (2023-04-17)
 
 
