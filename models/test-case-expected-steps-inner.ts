@@ -17,32 +17,26 @@
 /**
  * 
  * @export
- * @interface FeedbackRequest
+ * @interface TestCaseExpectedStepsInner
  */
-export interface FeedbackRequest {
+export interface TestCaseExpectedStepsInner {
     /**
-     * 
+     * The key of the step
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof TestCaseExpectedStepsInner
      */
-    'pipelineRunId': string;
+    'key': string;
     /**
-     * 
-     * @type {number}
-     * @memberof FeedbackRequest
-     */
-    'score': number;
-    /**
-     * 
+     * The output of the step
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof TestCaseExpectedStepsInner
      */
-    'recordedTime': string;
+    'output': string;
     /**
-     * 
-     * @type {string}
-     * @memberof FeedbackRequest
+     * The inputs of the step
+     * @type {{ [key: string]: string; }}
+     * @memberof TestCaseExpectedStepsInner
      */
-    'details'?: string | null;
+    'inputs'?: { [key: string]: string; } | null;
 }
 
