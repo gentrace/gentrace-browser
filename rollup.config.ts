@@ -18,6 +18,5 @@ export default {
       entryFileNames: "[name].mjs",
     },
   ],
-  external: ["@pinecone-database/pinecone", "openai"],
   plugins: [json(), commonjs()],
 };
