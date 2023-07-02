@@ -12,8 +12,22 @@
   ],
   "author": "Gentrace",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,json}": [
+      "prettier --write"
+    ]
+  },
   "husky": {
     "hooks": {
       "commit-msg": "npx commitlint -E  HUSKY_GIT_PARAMS "
@@ -25,10 +39,11 @@
     ]
   },
   "scripts": {
-    "build": "run-s clean compile",
-    "bump-patch": "./scripts/bump-patch",
-    "clean": "rm -rf dist",
-    "compile": "tsc -p tsconfig.json "
+    "build": "run-s clean typescript:compile rollup:compile copy-package",
+    "clean": "rimraf dist",
+    "typescript:compile": "tsc -p tsconfig.json",
+    "rollup:compile": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "copy-package": "cp package.json dist/package.json"
   },
   "dependencies": {
     "axios": "^0.27.2"
@@ -36,9 +51,15 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
-    "husky": "^4.3.8",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-typescript": "^11.1.0",
     "@types/node": "^12.11.5",
+    "husky": "^4.3.8",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.21.5",
     "typescript": "^3.6.4",
-    "npm-run-all": "^4.1.5"
+    "lint-staged": "^13.2.0"
   }
 }
