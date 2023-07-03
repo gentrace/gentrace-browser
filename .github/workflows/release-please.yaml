@@ -37,6 +37,7 @@ jobs:
 
       - name: Publish package to NPM
         run: |
+          cd dist
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_ACCESS_TOKEN }}" > .npmrc
           npm publish
         if: ${{ steps.release.outputs.release_created }}
