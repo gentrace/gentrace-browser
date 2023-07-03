@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0](https://github.com/gentrace/gentrace-browser/compare/v0.0.9...v0.1.0) (2023-07-02)
+
+
+### Features
+
+* Support ESM ([#40](https://github.com/gentrace/gentrace-browser/issues/40)) ([8e1b1dd](https://github.com/gentrace/gentrace-browser/commit/8e1b1dd7bb1569273fe308eb1e6109de456cceb6))
+
 ## [0.0.9](https://github.com/gentrace/gentrace-browser/compare/v0.0.8...v0.0.9) (2023-04-24)
 
 
