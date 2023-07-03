@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/gentrace/gentrace-browser/compare/v0.1.0...v0.1.1) (2023-07-03)
+
+
+### Bug Fixes
+
+* Fix release process ([#42](https://github.com/gentrace/gentrace-browser/issues/42)) ([6bf3ab9](https://github.com/gentrace/gentrace-browser/commit/6bf3ab923da1ce0c5b7c76af6e4700f0ddd8d811))
+
 ## [0.1.0](https://github.com/gentrace/gentrace-browser/compare/v0.0.9...v0.1.0) (2023-07-02)
 
 
