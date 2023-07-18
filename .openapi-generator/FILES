@@ -12,4 +12,8 @@ models/pipeline-run-request-step-runs-inner-provider.ts
 models/pipeline-run-request-step-runs-inner.ts
 models/pipeline-run-request.ts
 models/pipeline-run-response.ts
+models/test-case-expected-steps-inner.ts
+models/test-case.ts
+models/test-run.ts
+models/test-set.ts
 tsconfig.json
