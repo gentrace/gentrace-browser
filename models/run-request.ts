@@ -13,36 +13,40 @@
  */
 
 
+// May contain unused imports in some cases
+// @ts-ignore
+import { StepRun } from './step-run';
 
 /**
  * 
  * @export
- * @interface FeedbackRequest
+ * @interface RunRequest
  */
-export interface FeedbackRequest {
+export interface RunRequest {
     /**
      * 
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof RunRequest
      */
-    'pipelineRunId': string;
-    /**
-     * 
-     * @type {number}
-     * @memberof FeedbackRequest
-     */
-    'score': number;
+    'id': string;
     /**
      * 
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof RunRequest
      */
-    'recordedTime': string;
+    'slug'?: string;
     /**
      * 
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof RunRequest
+     * @deprecated
      */
-    'details'?: string | null;
+    'name'?: string;
+    /**
+     * 
+     * @type {Array<StepRun>}
+     * @memberof RunRequest
+     */
+    'stepRuns': Array<StepRun>;
 }
 

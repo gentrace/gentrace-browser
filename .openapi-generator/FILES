@@ -8,8 +8,12 @@ index.ts
 models/feedback-request.ts
 models/feedback-response.ts
 models/index.ts
-models/pipeline-run-request-step-runs-inner-provider.ts
-models/pipeline-run-request-step-runs-inner.ts
-models/pipeline-run-request.ts
-models/pipeline-run-response.ts
+models/pipeline.ts
+models/run-request.ts
+models/run-response.ts
+models/step-run-provider.ts
+models/step-run.ts
+models/test-case.ts
+models/test-result.ts
+models/test-run.ts
 tsconfig.json
