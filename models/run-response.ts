@@ -14,5 +14,17 @@
 
 
 
-export * from './api/feedback-api';
+/**
+ * 
+ * @export
+ * @interface RunResponse
+ */
+export interface RunResponse {
+    /**
+     * 
+     * @type {string}
+     * @memberof RunResponse
+     */
+    'pipelineRunId'?: string;
+}
 
