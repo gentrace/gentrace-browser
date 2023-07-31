@@ -17,14 +17,14 @@
 /**
  * 
  * @export
- * @interface FeedbackResponse
+ * @interface RunResponse
  */
-export interface FeedbackResponse {
+export interface RunResponse {
     /**
      * 
      * @type {string}
-     * @memberof FeedbackResponse
+     * @memberof RunResponse
      */
-    'message': string;
+    'pipelineRunId'?: string;
 }
 
