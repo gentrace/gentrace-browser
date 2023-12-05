@@ -1,5 +1,6 @@
 module.exports = {
   preset: "ts-jest/presets/js-with-ts",
+  setupFiles: ["dotenv/config"],
   testEnvironment: "node",
   testPathIgnorePatterns: ["node_modules", "dist"],
   transform: {

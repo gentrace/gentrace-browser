@@ -9,7 +9,8 @@
     "moduleResolution": "node",
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "esModuleInterop": true,
   },
   "exclude": [
     "dist",

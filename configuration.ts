@@ -13,8 +13,6 @@
  */
 
 
-const packageJson = require("../package.json");
-
 export interface ConfigurationParameters {
     clientToken?: string | Promise<string> | ((name: string) => string) | ((name: string) => Promise<string>);
     username?: string;
@@ -89,7 +87,6 @@ export class Configuration {
             this.baseOptions = {};
         }
         this.baseOptions.headers = {
-            'User-Agent': `OpenAI/NodeJS/${packageJson.version}`,
             'Authorization': `Bearer ${this.clientToken}`,
             ...this.baseOptions.headers,
         }
