@@ -42,7 +42,7 @@
     "build": "run-s clean typescript:compile rollup:compile copy-package",
     "clean": "rimraf dist",
     "typescript:compile": "tsc -p tsconfig.json",
-    "rollup:compile": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "rollup:compile": "rollup --config rollup.config.mjs",
     "copy-package": "cp package.json dist/package.json",
     "test": "jest"
   },
@@ -54,7 +54,6 @@
     "@commitlint/config-conventional": "^17.4.4",
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-typescript": "^11.1.0",
     "@types/jest": "^29.5.10",
     "@types/json-stable-stringify": "^1.0.36",
     "@types/node": "^12.11.5",
