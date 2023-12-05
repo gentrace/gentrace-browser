@@ -22,6 +22,14 @@ describe("Usage of Evaluation functionality", () => {
     recordedTime: 1633036800
   }
 
+  const feedbackGetResponse = {
+    id: '123e4567-e89b-12d3-a456-426614174000',
+    pipelineRunId: '456f7890-f12g-34h5-i678-912j34567890',
+    score: 0.85,
+    details: 'Feedback details here.',
+    recordedTime: 1633036800
+  };
+
   let server: SetupServer;
 
   beforeAll(() => {
@@ -40,7 +48,15 @@ describe("Usage of Evaluation functionality", () => {
           ctx.set("Content-Type", "application/json"),
           ctx.json(feedbackUpdateResponse),
         );
-      })
+      }),
+
+      rest.get("https://gentrace.ai/api/v2/feedback/:id", (req, res, ctx) => {
+        return res(
+          ctx.status(200),
+          ctx.set("Content-Type", "application/json"),
+          ctx.json(feedbackGetResponse),
+        );
+      }),
     );
     server.listen();
   });
@@ -76,5 +92,18 @@ describe("Usage of Evaluation functionality", () => {
 
     expect(stringify(response.data.score)).toEqual(stringify(feedbackUpdateResponse.score))
     expect(stringify(response.data.details)).toEqual(stringify(feedbackUpdateResponse.details))
+  })
+
+  it('should properly GET to Gentrace', async () => {
+    const config = new Configuration({
+      clientToken: process.env.GENTRACE_CLIENT_TOKEN
+    });
+
+    const api = new V2Api(config);
+
+    const response = await api.v2FeedbackIdGet("123e4567-e89b-12d3-a456-426614174000");
+
+    expect(stringify(response.data.score)).toEqual(stringify(feedbackGetResponse.score))
+    expect(stringify(response.data.details)).toEqual(stringify(feedbackGetResponse.details))
   })
 });
