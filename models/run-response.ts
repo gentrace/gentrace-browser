@@ -14,6 +14,17 @@
 
 
 
-export * from './api/v1-api';
-export * from './api/v2-api';
+/**
+ * 
+ * @export
+ * @interface RunResponse
+ */
+export interface RunResponse {
+    /**
+     * 
+     * @type {string}
+     * @memberof RunResponse
+     */
+    'pipelineRunId'?: string;
+}
 

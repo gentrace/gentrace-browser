@@ -13,7 +13,14 @@
  */
 
 
+// May contain unused imports in some cases
+// @ts-ignore
+import { SearchableUnixSecondsInputOneOf } from './searchable-unix-seconds-input-one-of';
 
-export * from './api/v1-api';
-export * from './api/v2-api';
+/**
+ * @type SearchableUnixSecondsInput
+ * @export
+ */
+export type SearchableUnixSecondsInput = SearchableUnixSecondsInputOneOf | number;
+
 

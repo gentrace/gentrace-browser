@@ -14,6 +14,23 @@
 
 
 
-export * from './api/v1-api';
-export * from './api/v2-api';
+/**
+ * 
+ * @export
+ * @interface StepRunContextRender
+ */
+export interface StepRunContextRender {
+    /**
+     * 
+     * @type {string}
+     * @memberof StepRunContextRender
+     */
+    'type': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StepRunContextRender
+     */
+    'key'?: string;
+}
 

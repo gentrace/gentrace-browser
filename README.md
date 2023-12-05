@@ -19,8 +19,8 @@ The Gentrace browser library enables developers to submit feedback to Gentrace s
 
 ## Getting started
 
-Visit our [guides](https://docs.gentrace.ai/docs/feedback-sdk) to learn how to get started.
+Visit our [guides](https://gentrace.ai/docs/observe/feedback) to learn how to get started.
 
 ### API reference 
 
-Visit our [API reference](https://docs.gentrace.ai/reference/post_pipeline-run) to construct API requests interactively.
+Visit our [API reference](https://gentrace.ai/docs/api/submit-feedback#submit-feedback) to construct API requests interactively.

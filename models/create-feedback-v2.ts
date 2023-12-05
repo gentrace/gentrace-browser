@@ -17,31 +17,31 @@
 /**
  * 
  * @export
- * @interface FeedbackRequest
+ * @interface CreateFeedbackV2
  */
-export interface FeedbackRequest {
+export interface CreateFeedbackV2 {
     /**
-     * 
+     * The unique identifier for the pipeline run
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof CreateFeedbackV2
      */
     'pipelineRunId': string;
     /**
-     * 
+     * Timestamp in seconds since the UNIX epoch. Can be transformed into a Date object.
      * @type {number}
-     * @memberof FeedbackRequest
+     * @memberof CreateFeedbackV2
+     */
+    'recordedTime': number;
+    /**
+     * The score of the feedback, ranging from 0 to 1
+     * @type {number}
+     * @memberof CreateFeedbackV2
      */
     'score': number;
     /**
-     * 
+     * Optional details about the feedback
      * @type {string}
-     * @memberof FeedbackRequest
-     */
-    'recordedTime': string;
-    /**
-     * 
-     * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof CreateFeedbackV2
      */
     'details'?: string | null;
 }
