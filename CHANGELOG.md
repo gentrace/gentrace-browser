@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/gentrace/gentrace-browser/compare/v0.1.1...v1.0.0) (2023-12-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update SDK to use new API ([#49](https://github.com/gentrace/gentrace-browser/issues/49))
+
+### Features
+
+* Update SDK to use new API ([#49](https://github.com/gentrace/gentrace-browser/issues/49)) ([b181355](https://github.com/gentrace/gentrace-browser/commit/b1813554c3f9b6edd0d508d8c7322880dfa5885c))
+
 ## [0.1.1](https://github.com/gentrace/gentrace-browser/compare/v0.1.0...v0.1.1) (2023-07-03)
 
 
