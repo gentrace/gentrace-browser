@@ -13,7 +13,14 @@
  */
 
 
+// May contain unused imports in some cases
+// @ts-ignore
+import { SearchableStringInputOneOf } from './searchable-string-input-one-of';
 
-export * from './api/v1-api';
-export * from './api/v2-api';
+/**
+ * @type SearchableStringInput
+ * @export
+ */
+export type SearchableStringInput = SearchableStringInputOneOf | string;
+
 

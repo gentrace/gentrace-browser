@@ -14,6 +14,19 @@
 
 
 
-export * from './api/v1-api';
-export * from './api/v2-api';
+/**
+ * 
+ * @export
+ * @interface MetadataValueObject
+ */
+export interface MetadataValueObject {
+    [key: string]: any;
+
+    /**
+     * 
+     * @type {string}
+     * @memberof MetadataValueObject
+     */
+    'type': string;
+}
 

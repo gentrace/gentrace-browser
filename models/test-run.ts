@@ -17,32 +17,38 @@
 /**
  * 
  * @export
- * @interface FeedbackRequest
+ * @interface TestRun
  */
-export interface FeedbackRequest {
+export interface TestRun {
     /**
      * 
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof TestRun
      */
-    'pipelineRunId': string;
-    /**
-     * 
-     * @type {number}
-     * @memberof FeedbackRequest
-     */
-    'score': number;
+    'id': string;
     /**
      * 
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof TestRun
      */
-    'recordedTime': string;
+    'createdAt': string;
     /**
      * 
      * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof TestRun
      */
-    'details'?: string | null;
+    'updatedAt': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TestRun
+     */
+    'caseId': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TestRun
+     */
+    'resultId': string;
 }
 

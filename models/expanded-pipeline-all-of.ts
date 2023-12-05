@@ -13,7 +13,21 @@
  */
 
 
+// May contain unused imports in some cases
+// @ts-ignore
+import { TestEvaluator } from './test-evaluator';
 
-export * from './api/v1-api';
-export * from './api/v2-api';
+/**
+ * 
+ * @export
+ * @interface ExpandedPipelineAllOf
+ */
+export interface ExpandedPipelineAllOf {
+    /**
+     * 
+     * @type {Array<TestEvaluator>}
+     * @memberof ExpandedPipelineAllOf
+     */
+    'evaluators'?: Array<TestEvaluator>;
+}
 

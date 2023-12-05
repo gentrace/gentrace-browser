@@ -17,31 +17,19 @@
 /**
  * 
  * @export
- * @interface FeedbackRequest
+ * @interface UpdateFeedbackV2
  */
-export interface FeedbackRequest {
+export interface UpdateFeedbackV2 {
     /**
-     * 
-     * @type {string}
-     * @memberof FeedbackRequest
-     */
-    'pipelineRunId': string;
-    /**
-     * 
+     * The score of the feedback, ranging from 0 to 1
      * @type {number}
-     * @memberof FeedbackRequest
+     * @memberof UpdateFeedbackV2
      */
-    'score': number;
+    'score'?: number;
     /**
-     * 
+     * Optional details about the feedback
      * @type {string}
-     * @memberof FeedbackRequest
-     */
-    'recordedTime': string;
-    /**
-     * 
-     * @type {string}
-     * @memberof FeedbackRequest
+     * @memberof UpdateFeedbackV2
      */
     'details'?: string | null;
 }

@@ -14,6 +14,11 @@
 
 
 
-export * from './api/v1-api';
-export * from './api/v2-api';
+/**
+ * @type FilterableMetadataInputValueGt
+ * The metadata value is greater than this value.
+ * @export
+ */
+export type FilterableMetadataInputValueGt = number | string;
+
 

@@ -14,6 +14,11 @@
 
 
 
-export * from './api/v1-api';
-export * from './api/v2-api';
+/**
+ * @type FilterableMetadataInputValueEquals
+ * The metadata value is equal to this value.
+ * @export
+ */
+export type FilterableMetadataInputValueEquals = number | string;
+
 
